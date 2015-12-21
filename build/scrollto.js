@@ -85,13 +85,7 @@ var ScrollToElement = (function (_React$Component) {
         var component = _props.component;
         var children = _props.children;
 
-        var Component = component;
-
-        return React.createElement(
-            Component,
-            _extends({}, this.props, { id: id, ref: 'scroll' }),
-            children
-        );
+        return React.createElement(component, _extends({}, this.props, { id: id, ref: 'scroll' }), children);
     };
 
     return ScrollToElement;

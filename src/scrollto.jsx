@@ -47,13 +47,7 @@ class ScrollToElement extends React.Component {
     render() {
         const {id, component, children} = this.props;
 
-        const Component = component;
-
-        return (
-            <Component {...this.props} id={id} ref="scroll">
-                {children}
-            </Component>
-        );
+        return React.createElement( component, {...this.props, id, ref: 'scroll'}, children );
     }
 }
 
