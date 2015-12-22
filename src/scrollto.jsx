@@ -40,7 +40,9 @@ class ScrollToElement extends React.Component {
         } else {
             const pos = this.findPos( element );
 
-            window.scroll( 0, pos );
+            if( pos ) {
+                window.scroll( 0, pos );
+            }
         }
     }
 
