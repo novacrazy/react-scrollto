@@ -4,7 +4,7 @@
   "description":     "React.js Component that can scroll to itself",
   "main":            "index.js",
   "keywords":        [
-    "recaptcha",
+    "scroll",
     "react",
     "component"
   ],
