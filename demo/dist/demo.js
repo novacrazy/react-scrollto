@@ -222,7 +222,9 @@
 	        } else {
 	            var pos = this.findPos(element);
 
-	            window.scroll(0, pos);
+	            if (pos) {
+	                window.scroll(0, pos);
+	            }
 	        }
 	    };
 
